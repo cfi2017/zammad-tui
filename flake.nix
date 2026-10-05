@@ -56,7 +56,7 @@
     }))
     // {
       overlays.default = final: prev: {
-        zammad-tui = self.packages.${prev.system.hostPlatform.system}.default;
+        zammad-tui = self.packages.${prev.stdenv.hostPlatform.system}.default;
       };
     };
 }
